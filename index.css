@@ -1,6 +1,14 @@
 
+    .logo {
+     font-family: 'Anton', sans-serif;  
+    }
 
+    .searchbar {
+      border-radius: 1%;
+    }
 
+    
     #explain {
       background-color: rgb(245, 255, 238);
     };
+

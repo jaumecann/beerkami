@@ -12,23 +12,30 @@
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <!--Any additional css? -->
-  
+    <link href="https://fonts.googleapis.com/css?family=Anton&display=swap" rel="stylesheet">
+
    <link rel="stylesheet" href="index.css"
-    
+
+
+
 </head>
 
 <body>
 
-<nav class="navbar bg-success navbar-expand-sm">   
-<div class="container-fluid nav-fill">
-        <div class="navbar-nav">
-        <a class="nav-item nav-link text-white" href="#">Nav item</a>
-        <a class="nav-item nav-link text-white" href="#">Nav item</a>
-        <a class="nav-item nav-link text-white" href="#">Nav item</a>
-        <a class="nav-item nav-link text-white" href="#">Nav item</a>
-        <a class="nav-item nav-link text-white" href="#">Nav item</a>
+
+<nav class="nav bg-warning navbar-expand">   
+
+        <p class="h1 logo nav-item col-3 nav-link">Beerkami</p>
+        <div class="nav-item col-5 bg-white align-self-center rounded shadow d-flex p-0 mb-1">
+       
+          <div style="border-style:solid;" class="col-10"><p class="p-0 ">Search</p></div>
+          <div style="border-style:solid;" class="p-0"><img style="width:50%; border-style:solid" src="img/search.png"></img></div>
+        
         </div>
-</div><!-- end container fluid-->
+        <a class="nav-item align-self-center col-1 nav-link text-white" href="#">Nav item</a>
+        <a class="nav-item align-self-center col-1 nav-link text-white" href="#">Nav item</a>
+        <a class="nav-item align-self-center nav-link text-white" href="#">Nav item</a>
+
 </nav> 
 
 <div class="container-fluid bg-success">
@@ -44,12 +51,24 @@
 <div class="container mt-5" id="main">
 
   <section class="d-flex">
-    
-    <div style="background-color:rgb(22, 78, 5); z-index:2;" class="col-3 col-sm-3 col-md-2">Caixa titulars</div>
-    <div style="background-color:rgb(22, 78, 5); transform:skewX(-10deg); z-index:1;" class="col-2 col-md-2 ml-n4 ml-md-n5"></div>
-    <div><img src="img/weekimg.jpg" alt="pack mensual" class="img-fluid ml-n5"></img></div>
+   <div class="col-2"> <!--container for skew block-->
 
-  </section><!-- end flex big image-->
+   <div class="d-flex "style="height:85%"><!--flex container with height-->
+
+     
+          <div class="col-10" style="background-color:wheat; z-index:2;">Caixa titulars</div>
+          <div class="col-10 ml-n5" style="background-color:wheat; transform:skewX(-10deg); z-index:1;"></div>
+    
+
+
+   </div><!--end not flex container-->
+
+    
+   </div> <!-- end skew block-->
+    
+    <div class="col-7"><img src="img/weekimg.jpg" alt="pack mensual" class="img-fluid ml-n5"></img></div>
+
+  </section>
 
  
 
