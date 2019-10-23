@@ -9,7 +9,7 @@
 
     
     #explain {
-      background-color: rgb(245, 255, 238);
+      background-color: rgb(223, 223, 223);
     }
 
     .hashbox {
@@ -18,23 +18,40 @@
       background-color: white;
     }
 
-    .counter {
-      width: 300px;
-      height: 300px;
-      margin-left: -50%;
-      background-color: rgb(255, 22, 57);
-     
-
-    }
+  
 
     .skew {
       height:85%;
 
     }
 
-    #hiddenbox {
-      display:none;
+    #textcounter{
+      height:300px; 
+      width:300px;
+      border-radius: 150px;
+      border-width: 1px;
+      border-style: solid;
+      box-shadow: 1px 1px 5px black, -1px -1px 5px black;
+      position: absolute;
+      bottom:25%;
+      right:-5%;
+      background-color: orange;
+  
     }
+
+    #packtext {
+    color:white;
+    font-family: 'Contrail One', cursive;
+    position: absolute;
+
+    }
+
+    #thismonth {
+     background-color: rgb(0, 0, 0); 
+     transform:skewX(-10deg); 
+     
+    }
+
 
     @media (max-width: 768px) {
 
@@ -43,15 +60,16 @@
 
       }
 
-      .counter {
-        margin-left: 0;
-        width: 100%;
-        
+
+      #textcounter{
+        transform:skewX(-10deg); 
+        width:90%;
+        height: auto;
+        border-radius: 0;
+        position: initial;
       }
 
-      #hiddenbox {
-        display:block;
-      }
+
       
 
       /*
