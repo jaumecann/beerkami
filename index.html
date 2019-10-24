@@ -46,7 +46,7 @@
 
 </nav> 
 
-<div class="container-fluid" style="background-color: rgb(94, 60, 9);">
+<div class="container-fluid" style="background-color: rgb(0, 0, 0);">
 <nav class="nav  nav-fill">   
           <a class="nav-item nav-link text-white" href="#">Nav item</a>
           <a class="nav-item nav-link text-white" href="#">Nav item</a>
@@ -62,10 +62,10 @@
   
     <div class="col-12 col-xl-11 bg-secondary text-center" style="height:30px;">El pack del mes</div>
 
-    <div class="col-7 order-2 order-md-1 col-md-3 p-0 " style="z-index:3;"> <!--container for skew block-->
+    <div class="col-5 order-2 order-md-1 col-md-3 p-0 " style="z-index:3;"> <!--container for skew block-->
 
       <div style="z-index:3;" id="packtext">
-        <h2 class="display-4 pl-2" style="width:200%; color:orange; background-color:lightyellow;">Especial HopBox</h2> 
+        <h2 class="display-4 pl-2" style="width:200%; color:orange; background-color:lightyellow; position:relative;">Especial HopBox</h2> 
         <p class="pl-3">em a few styles just to make them visible on screen. So if I wanted to create just a border, all I need to do is type in the keyword border and you'll see that you get this sort of medium gray. I can also use one of the color classes so I can say border primary, b</p></div>
 
       <div class="d-flex skew justify-content-end" style="background-color:rgb(0, 0, 0); z-index:2; position: relative;" ><!--flex container with height-->
@@ -82,30 +82,36 @@
     
    </div> <!-- end skew block-->
     
-    <div class="col-12 col-md-9 order-1 order-md-2 p-0"><img src="img/weekimg.jpg" alt="pack mensual" class="img-fluid p-0"></img></div>
+    <div class="col-12 col-md-9 order-1 order-md-2 p-0 "><img src="img/weekimg.jpg" alt="pack mensual" class="img-fluid p-0"></img></div>
    
-   <!-- counter ball -->
-    <div style="z-index:2; flex-grow: 1;" class="p-0 order-3 align-self-center">
+   <!-- counter area (round) -->
+    <div style="z-index:2; flex-grow: 1;" class="pl-0 order-3 ">
 
-        <div class="d-flex skew">
+        <div class="d-flex skew" style="background-color:orange;">
 
-        <div class="text-center p-0 " id="textcounter">
-          <p style="width:">Pack por <span style="font-size:2rem">13,50</span> euros</p>
-          <p>Somos 567 usuarios</p>
-          <p>Quedan X días</p>
-          <p>Próxima meta</p>
-          <p>1000 usuarios = 12,00 euros</p>
+        <div class="align-self-end text-center" id="textcounter">
+
+          <p><span style="font-size:2rem">16,50€</span></p>
+          <div class="d-flex justify-content-around">
+            <div class="nospace">
+                <p>Somos</p>
+                <p class="cifra"><span>5</span> <span>6</span> <span>7</span> </p>
+                <p>usuarios</p>
+            </div>
+            <div class="nospace">
+              <p>Quedan</p>
+              <p class="cifra2"><span>1</span> <span>7</span> </p>
+              <p>días</p>
+
+          </div> 
           
         </div>
-   <!-- 
-        <div class="h3 text-center p-0 col-md-12 ml-md-0 bg-warning">Contentito</div>
-
-   -->
-        
+        <p style="margin-top:1rem">1000 usuarios = 14,50 euros</p>
 
         </div>
 
     </div>
+  </div>
 
   </section>
 
@@ -120,41 +126,48 @@
  <div class="row justify-content-center mt-5">
   <div class="h3 col-4 text-center""><p>¿Cómo Funciona?</p></div>
 </div><!-- row end -->
-<div class="row justify-content-center pb-5">
 
-  <div class="col-sm-3 m-2 hashbox pt-3">
-    <div class="row justify-content-center">
-   <div class="col-3 align-self-center"><img class="" src="img/medal.png" alt="medal icon" style="width:60px;"></img><p><strong>#selectivo</strong></p></div>
-      <div class="col-9 text-start">
-          
-          <p>En Beerkami sólo vas a encontrar cerveza artesana premium. Cada mes rastreamos entre los fabricantes y seleccionamos un pack único. El pedido se ejecuta cada día 15.</p>
+<div id="concepts" class="row justify-content-center pb-5">
+
+  <div class="col-10 col-sm-6 col-md-3 m-2 hashbox pt-3 d-flex">
+
+    <div class="d-flex flex-sm-wrap flex-xl-nowrap justify-content-center">
+   <div class=""><img class="" src="img/medal.png" alt="medal icon" style="width:60px;"></img><p><strong>#selectivo</strong></p>
+  </div>
+   <div class="col-10 col-sm-12 col-xl-9">       
+    <p>En Beerkami sólo vas a encontrar cerveza artesana premium. Cada mes rastreamos entre los fabricantes y seleccionamos un pack único. El pedido se ejecuta cada día 15.</p>
+  </div>
+  </div>
+      
+    </div>
+
+    <div class="col-10 col-sm-6 col-md-3 m-2 hashbox pt-3 d-flex">
+
+        <div class="d-flex flex-sm-wrap flex-xl-nowrap justify-content-center">
+       <div class=""><img class="" src="img/money.png" alt="medal icon" style="width:60px;"></img><p><strong>#colectivo</strong></p>
       </div>
-    </div>
-
-      
-      
-    </div>
-    
-    <div class="col-sm-3 m-2 hashbox pt-3">
-        <div class="row justify-content-center"><img src="img/money.png" alt="money icon"></img></div>
-        <div class="row justify-content-center">
-          <div class="col-10 text-center">
-              <p><strong>#colectivo</strong></p>
-              <p>Súmate al pedido. Sabemos que la cerveza artesana no es barata. La unión hace la fuerza. Cuantos más seamos más barata nos saldrá. Somos transparentes con los objetivos.</p>
-          </div>
+       <div class="col-10 col-sm-12 col-xl-9">       
+        <p>Súmate al pedido. Sabemos que la cerveza artesana no es barata. La unión hace la fuerza. Cuantos más seamos más barata nos saldrá. Somos transparentes con los objetivos.</p>
+      </div>
+      </div>
           
         </div>
-        </div>
-        <div class="col-sm-3 m-2 hashbox pt-3">
-            <div class="row justify-content-center"><img src="img/beerbox.png" alt="beer box icon"></img></div>
-            <div class="row justify-content-center">
-              <div class="col-10 text-center">
-                  <p><strong>#cómodo</strong></p>
-                  <p>De la fábrica a tu nevera. Sin intermediarios. Nos encargamos de mandártela a casa. Y también disponemos de tienda para que puedas hacerte con lo mejor de nuestro catálogo en cualquier momento</p>
-              </div>
+
+      
+        <div class="col-10 col-sm-6 col-md-3 m-2 hashbox pt-3 d-flex">
+
+            <div class="d-flex flex-sm-wrap flex-xl-nowrap justify-content-center">
+           <div class=""><img class="" src="img/beerbox.png" alt="medal icon" style="width:60px;"></img><p class="text-center"><strong>#fácil</strong></p>
+          </div>
+           <div class="col-10 col-sm-12 col-xl-9">       
+            <p>De la fábrica a tu nevera. Sin intermediarios. Nos encargamos de mandártela. Y también disponemos de tienda para que puedas hacerte con lo mejor de nuestro catálogo en cualquier momento.</p>
+          </div>
+          </div>
               
             </div>
-            </div>
+
+
+          
 </div><!-- second row end-->
 </div><!--end container section-->
 </section>

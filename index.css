@@ -25,19 +25,16 @@
 
     }
 
-    #textcounter{
-      height:300px; 
-      width:300px;
-      border-radius: 150px;
-      border-width: 1px;
-      border-style: solid;
-      box-shadow: 1px 1px 5px black, -1px -1px 5px black;
+    h2::after {
+      content:"";
+      width: 20%;
+      height: 100%;
+      transform:skewX(-10deg);
+      background-color:lightyellow;
       position: absolute;
-      bottom:25%;
-      right:-5%;
-      background-color: orange;
-  
     }
+
+
 
     #packtext {
     color:white;
@@ -52,6 +49,62 @@
      
     }
 
+    #concepts{
+      font-size: .85rem;
+    }
+
+
+    .cifra span{
+      background-color: black;
+      color:white;
+      font-size: 2rem;
+      padding: .2rem;
+      border-radius: 10%;
+
+    }
+
+    .cifra2 span{
+      background-color: white;
+      color:black;
+      font-size: 2rem;
+      padding: .2rem;
+      border-radius: 10%;
+
+    }
+
+    .nospace p {
+      margin:.2rem;
+      padding:0;
+    }
+
+    #textcounter{
+      height:300px; 
+      width:300px;
+      border-radius: 150px;
+      border-width: 1px;
+      border-style: solid;
+      box-shadow: 1px 1px 5px black, -1px -1px 5px black;
+      position: absolute;
+      bottom:25%;
+      right:-5%;
+      background-color: orange;
+      font-family: 'Anton', sans-serif; 
+  
+    }
+
+    #textcounter > p:first-child {
+      background-color: white;
+      height: 15%;
+      width: 40%;
+      display: inline-block; 
+      margin-top: 2em;
+      border-radius: 25px;
+      border-style:solid;
+      border-width: 1px;    
+
+    }
+
+
 
     @media (max-width: 768px) {
 
@@ -62,13 +115,21 @@
 
 
       #textcounter{
-        transform:skewX(-10deg); 
-        width:90%;
+        /*transform:skewX(-10deg);*/ 
+        width:100%;
         height: auto;
         border-radius: 0;
         position: initial;
+        box-shadow: none;
+        border-style: none;
+        margin-left: 15%;
+      
       }
 
+      #textcounter > p:first-child {
+        margin-bottom: .3rem;
+  
+      }
 
       
 
