@@ -59,14 +59,26 @@
 <div class="container mt-5 p-0">
 
   <section class="d-flex flex-wrap" style="position:relative;">
-  
-    <div class="col-12  bg-secondary text-center" style="height:30px;">El pack del mes</div>
+    <div style="border-style:solid; border-width: 1px; color:orange; width:100%; position:absolute; margin-top: 1%; ">
+    </div>
+    <div class="col-12 d-flex justify-content-center mt-n2 mt-lg-0">
+      <div class="px-3" style="background-color:white; ">El pack del mes</div>
+    </div>
 
-    <div class="col-5 order-2 order-md-1 col-md-3 p-0 " style="z-index:3;"> <!--container for skew block-->
+    <div class="col-5 order-2 order-md-1 col-md-3 p-0 mt-md-3 " style="z-index:3;"> <!--container for skew block-->
 
       <div style="z-index:3;" id="packtext">
         <h2 class="display-4 pl-2">Especial HopBox</h2> 
-        <p class="pl-3">em a few styles just to make them visible on screen. So if I wanted to create just a border, all I need to do is type in the keyword border and you'll see that you get this sort of medium gray. I can also use one of the color classes so I can say border primary, b</p></div>
+        <p class="d-none d-lg-inline-block ml-3 pb-2" style="border-bottom-style: solid; border-bottom-width: 1px;">La selección de este mes nos trae lo más exquisito de la artesana de Nueva Zelanda. Sus lúpulos tienen una reputación mundial por ser algunas de las variedades más picantes y afrutadas que se pueden encontrar en cualquier lugar. Estas son las elegidas.</p>
+          <ul>
+            <li>Beyond the Clouds (IPA)</li>
+            <li>Boneface The Unit (IPA)</li>
+            <li>The Duke (IPA Rye)</li>
+            <li>Double Drop (Double IPA)</li>
+            <li>Dragon (APA)</li>
+            <li>Storm Hopper (APA)</li>
+          </ul>
+        </div>
 
       <div class="d-flex skew justify-content-end" style="background-color:rgb(0, 0, 0); z-index:2; position: relative;" ><!--flex container with height-->
  
@@ -82,10 +94,10 @@
     
    </div> <!-- end skew block-->
     
-    <div class="col-12 col-md-9 order-1 order-md-2 p-0 "><img src="img/weekimg.jpg" alt="pack mensual" class="img-fluid p-0"></img></div>
+    <div class="col-12 col-md-9 order-1 order-md-2 p-0 mt-3"><img src="img/weekimg.jpg" alt="pack mensual" class="img-fluid p-0"></img></div>
    
    <!-- counter area (round) -->
-    <div style="z-index:2; flex-grow: 1;" class="pl-0 order-3 ">
+    <aside style="z-index:2; flex-grow: 1;" class="pl-0 order-3 ">
 
         <div class="d-flex skew" style="background-color:orange;">
 
@@ -106,12 +118,12 @@
           </div> 
           
         </div>
-        <p style="margin-top:1rem">1000 usuarios = 14,50 euros</p>
+        <p style="margin-top:1rem">Próxima meta: <br><span style="font-size:1.4rem; color:black">1000 usuarios -> 15€</span></p>
 
         </div>
 
     </div>
-  </div>
+  </aside>
 
   </section>
 
@@ -119,9 +131,8 @@
 
 </div><!-- end main container -->
 
+<div class="container-fluid" id="explain">
 <section>
-
-  <div class="container-fluid" id="explain">
 
  <div class="row justify-content-center mt-5">
   <div class="h3 col-4 text-center""><p>¿Cómo Funciona?</p></div>
@@ -147,7 +158,7 @@
        <div class=""><img class="" src="img/money.png" alt="medal icon" style="width:60px;"></img><p><strong>#colectivo</strong></p>
       </div>
        <div class="col-10 col-sm-12 col-xl-9">       
-        <p>Súmate al pedido. Sabemos que la cerveza artesana no es barata. La unión hace la fuerza. Cuantos más seamos más barata nos saldrá. Somos transparentes con los objetivos.</p>
+        <p>Súmate al pedido. Sabemos que la cerveza artesana no es barata. La unión hace la fuerza. Cuantos más seamos, más barata nos saldrá. Somos transparentes con los objetivos.</p>
       </div>
       </div>
           
@@ -169,11 +180,29 @@
 
           
 </div><!-- second row end-->
-</div><!--end container section-->
 </section>
+</div><!--end container section-->
 
 
-<section class="mt-5"></section>
+<div class="container"> 
+
+  <section class="mt-5"></section>
+  <div><p>Recien llegadas</p></div>
+  <div class="row"> <!--six items row-->
+   
+    <div class="col-2" style="height:100px; border-style:solid"><div class="bg-secondary"><p>Proba de text lorem ipsum bla bla bla jseidj herufhrufh rfuhhsdush ddhudu h</p></div></div>
+    <div class="col-2" style="height:100px; border-style:solid"><div class="bg-secondary"> <p>Proba de text lorem ipsum bla bla bla jseidj herufhrufh rfuhhsdush ddhudu h</p></div></div>
+    <div class="col-2" style="height:100px; border-style:solid"><div class="bg-secondary"> <p>Proba de text lorem ipsum bla bla bla jseidj herufhrufh rfuhhsdush ddhudu h</p></div></div>
+    <div class="col-2" style="height:100px; border-style:solid"><div class="bg-secondary"> <p>Proba de text lorem ipsum bla bla bla jseidj herufhrufh rfuhhsdush ddhudu h</p></div></div>
+    <div class="col-2" style="height:100px; border-style:solid"><div class="bg-secondary"> <p>Proba de text lorem ipsum bla bla bla jseidj herufhrufh rfuhhsdush ddhudu h</p></div></div>
+    <div class="col-2" style="height:100px; border-style:solid"><div class="bg-secondary"> <p>Proba de text lorem ipsum bla bla bla jseidj herufhrufh rfuhhsdush ddhudu h</p></div></div>
+
+  </div> <!-- end six items row -->
+
+
+</div><!--end container-->
+
+
 
 </body>
 
