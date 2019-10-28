@@ -1,5 +1,9 @@
 
-    
+    body {
+      background-color: rgb(228, 228, 228);
+    }
+
+
     .logo {
      font-family: 'Anton', sans-serif;  
     }
@@ -10,11 +14,11 @@
 
     
     #explain {
-      background-color: rgb(243, 224, 207);
+      background-color: rgb(248, 248, 239);
     }
 
     .hashbox {
-      box-shadow: 0px 0px 3px grey, -0px -0px 3px grey;
+      box-shadow: 0 0 4px 0 rgba(0,0,0,0.15);
       font-size: 0.9em;
       background-color: white;
     }
