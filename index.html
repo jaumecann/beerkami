@@ -14,6 +14,7 @@
     <!--Any additional css? -->
     <link href="https://fonts.googleapis.com/css?family=Anton&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Contrail+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
 
    <link rel="stylesheet" href="index.css">
 
@@ -77,8 +78,13 @@
             <li>Dragon (APA)</li>
             <li>Storm Hopper (APA)</li>
           </ul>
-          <div class="text-center" style="border-style: solid; border-width:2px">¡Únete al pedido!</div>
+          <div class="d-lg-none">
+            <div class="text-center" style="border-style: solid; border-width:2px; background-color:orange; color:black; transform: skewX(-10deg);"><a class="text-decoration-none text-dark" href="#">¡Únete al pedido!</a></div>
+          <p class="text-center" style="color:orange">1000 usuarios = 15€</p>
         </div>
+
+          </div>
+          
 
       <div class="d-flex skew justify-content-end" style="background-color:rgb(0, 0, 0); z-index:2; position: relative;" ><!--flex container with height-->
  
@@ -115,17 +121,21 @@
               <p class="cifra2"><span>1</span> <span>7</span> </p>
               <p>días</p>
 
-          </div> 
-          
-        </div>
 
         <!-- part que cal ajustar
 
         <p style="margin-top:1rem">Próxima meta: <br><span style="font-size:1.4rem; color:black">1000 usuarios -> 15€</span></p>
         -->
        
-
+          </div>
         </div>
+
+        <div class="d-none d-lg-block">
+          <div class="text-center" style="border-style: solid; border-width:2px; background-color:black; color:orange;">¡Únete al pedido!</div>
+        <p class="text-center" style="color:black">1000 usuarios = 15€</p>
+      </div>
+
+     </div>
 
     </div>
   </aside>
@@ -136,16 +146,20 @@
 
 </div><!-- end main container -->
 
-<div class="container-fluid" id="explain">
+<div class="container-fluid mt-3" id="explain">
 <section>
-
+<!--
+  capçalera??
  <div class="row justify-content-center mt-5">
-  <div class="h3 col-4 text-center""><p>¿Cómo Funciona?</p></div>
-</div><!-- row end -->
+  <div class="h3 col-4 text-center""><p style="font-family:'Anton', sans-serif; ">¿Cómo Funciona?</p></div>
+</div> 
 
-<div id="concepts" class="row justify-content-center pb-5">
+-->
 
-    <div class="col-10 col-sm-6 col-md-3 m-2 hashbox pt-3 d-flex flex-sm-wrap flex-xl-nowrap justify-content-center">
+
+<div id="concepts" class="row justify-content-center py-5 mt-5">
+
+    <div class="col-10 col-sm-8 col-md-3 m-2 hashbox pt-3 d-flex flex-sm-wrap flex-xl-nowrap justify-content-center">
    <div class=""><img class="" src="img/medal.png" alt="medal icon" ></img><p><strong>#selectivo</strong></p>
   </div>
    <div class="col-10 col-sm-12 col-xl-9">       
@@ -155,7 +169,7 @@
       
    
 
-  <div class="col-10 col-sm-6 col-md-3 m-2 hashbox pt-3 d-flex flex-sm-wrap flex-xl-nowrap justify-content-center">
+  <div class="col-10 col-sm-8 col-md-3 m-2 hashbox pt-3 d-flex flex-sm-wrap flex-xl-nowrap justify-content-center">
        <div class=""><img class="" src="img/money.png" alt="medal icon"></img><p><strong>#colectivo</strong></p>
       </div>
        <div class="col-10 col-sm-12 col-xl-9">       
@@ -166,7 +180,7 @@
         
 
       
-      <div class="col-10 col-sm-6 col-md-3 m-2 hashbox pt-3 d-flex flex-sm-wrap flex-xl-nowrap justify-content-center">
+      <div class="col-10 col-sm-8 col-md-3 m-2 hashbox pt-3 d-flex flex-sm-wrap flex-xl-nowrap justify-content-center">
            <div class=""><img class="" src="img/beerbox.png" alt="medal icon"></img><p class="text-center"><strong>#fácil</strong></p>
           </div>
            <div class="col-10 col-sm-12 col-xl-9">       
@@ -189,14 +203,14 @@
   <div><p>Recien llegadas</p></div>
   <div class="row justify-content-center"> <!--max six items row-->
    
-    <div class="col-10 col-md-4 col-lg-2 beeritem d-flex flex-md-wrap justify-content-around py-2">
-      
-          <img class="img-fluid offset-1 offset-sm-0" src="img/item1.jpg" alt="green devil"></img>
-          <div class="row justify-content-end offset-2 offset-md-0">
-              <p class="col-12 font-weight-bold">Green Devil IPA - Oakham Ales - 
+    <div class="col-10 col-md-4 col-lg-2 beeritem d-flex flex-md-wrap py-2 ">
+          <div class="col-6 col-md-12 text-center py-2 backpics"><img src="img/Harveys.png" alt="green devil"></img></div>
+         
+          <div class="row justify-content-center">
+              <p class="col-10 font-weight-bold">Green Devil IPA - Oakham Ales - 
               IPA - American</p>
-              <p class="col-12 ">Precio unidad: 3,60€</p>
-              <div class="col-12 mr-1 text-center align-self-end bg-warning pt-3" style="height:25%">
+              <p class="col-10 ">Precio unidad: 3,60€</p>
+              <div class="col-8 text-center align-self-end bg-warning pt-3" style="height:20%">
                   <p">Añadir al carrito</p>
 
               </div>
