@@ -15,8 +15,7 @@
     <link href="https://fonts.googleapis.com/css?family=Anton&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Contrail+One&display=swap" rel="stylesheet">
 
-   <link rel="stylesheet" href="index.css"
-
+   <link rel="stylesheet" href="index.css">
 
 
 </head>
@@ -78,6 +77,7 @@
             <li>Dragon (APA)</li>
             <li>Storm Hopper (APA)</li>
           </ul>
+          <div class="text-center" style="border-style: solid; border-width:2px">¡Únete al pedido!</div>
         </div>
 
       <div class="d-flex skew justify-content-end" style="background-color:rgb(0, 0, 0); z-index:2; position: relative;" ><!--flex container with height-->
@@ -101,9 +101,9 @@
 
         <div class="d-flex skew" style="background-color:orange;">
 
-        <div class="align-self-end text-center" id="textcounter">
+        <div class="align-self-center text-center" id="textcounter">
 
-          <p><span style="font-size:2rem">16,50€</span></p>
+          <p class="mt-5 mt-md-4"><span style="font-size:3rem">16,50€</span></p>
           <div class="d-flex justify-content-around">
             <div class="nospace">
                 <p>Somos</p>
@@ -145,42 +145,36 @@
 
 <div id="concepts" class="row justify-content-center pb-5">
 
-  <div class="col-10 col-sm-6 col-md-3 m-2 hashbox pt-3 d-flex">
-
-    <div class="d-flex flex-sm-wrap flex-xl-nowrap justify-content-center">
-   <div class=""><img class="" src="img/medal.png" alt="medal icon" style="width:60px;"></img><p><strong>#selectivo</strong></p>
+    <div class="col-10 col-sm-6 col-md-3 m-2 hashbox pt-3 d-flex flex-sm-wrap flex-xl-nowrap justify-content-center">
+   <div class=""><img class="" src="img/medal.png" alt="medal icon" ></img><p><strong>#selectivo</strong></p>
   </div>
    <div class="col-10 col-sm-12 col-xl-9">       
     <p>En Beerkami sólo vas a encontrar cerveza artesana premium. Cada mes rastreamos entre los fabricantes y seleccionamos un pack único. El pedido se ejecuta cada día 15.</p>
   </div>
   </div>
       
-    </div>
+   
 
-    <div class="col-10 col-sm-6 col-md-3 m-2 hashbox pt-3 d-flex">
-
-        <div class="d-flex flex-sm-wrap flex-xl-nowrap justify-content-center">
-       <div class=""><img class="" src="img/money.png" alt="medal icon" style="width:60px;"></img><p><strong>#colectivo</strong></p>
+  <div class="col-10 col-sm-6 col-md-3 m-2 hashbox pt-3 d-flex flex-sm-wrap flex-xl-nowrap justify-content-center">
+       <div class=""><img class="" src="img/money.png" alt="medal icon"></img><p><strong>#colectivo</strong></p>
       </div>
        <div class="col-10 col-sm-12 col-xl-9">       
         <p>Súmate al pedido. Sabemos que la cerveza artesana no es barata. La unión hace la fuerza. Cuantos más seamos, más barata nos saldrá. Somos transparentes con los objetivos.</p>
       </div>
       </div>
           
-        </div>
+        
 
       
-        <div class="col-10 col-sm-6 col-md-3 m-2 hashbox pt-3 d-flex">
-
-            <div class="d-flex flex-sm-wrap flex-xl-nowrap justify-content-center">
-           <div class=""><img class="" src="img/beerbox.png" alt="medal icon" style="width:60px;"></img><p class="text-center"><strong>#fácil</strong></p>
+      <div class="col-10 col-sm-6 col-md-3 m-2 hashbox pt-3 d-flex flex-sm-wrap flex-xl-nowrap justify-content-center">
+           <div class=""><img class="" src="img/beerbox.png" alt="medal icon"></img><p class="text-center"><strong>#fácil</strong></p>
           </div>
            <div class="col-10 col-sm-12 col-xl-9">       
             <p>De la fábrica a tu nevera. Sin intermediarios. Nos encargamos de mandártela. Y también disponemos de tienda para que puedas hacerte con lo mejor de nuestro catálogo en cualquier momento.</p>
           </div>
           </div>
               
-            </div>
+            
 
 
           
@@ -190,21 +184,40 @@
 
 
 <div class="container"> 
+    <section class="mt-5">
 
-  <section class="mt-5"></section>
   <div><p>Recien llegadas</p></div>
-  <div class="row"> <!--six items row-->
+  <div class="row justify-content-center"> <!--max six items row-->
    
-    <div class="col-2" style="height:100px; border-style:solid"><div class="bg-secondary"><p>Proba de text lorem ipsum</p></div></div>
-    <div class="col-2" style="height:100px; border-style:solid"><div class="bg-secondary"> <p>Proba de text lorem ipsum</p></div></div>
-    <div class="col-2" style="height:100px; border-style:solid"><div class="bg-secondary"> <p>Proba de text lorem ipsum</p></div></div>
-    <div class="col-2" style="height:100px; border-style:solid"><div class="bg-secondary"> <p>Proba de text lorem ipsum</p></div></div>
-    <div class="col-2" style="height:100px; border-style:solid"><div class="bg-secondary"> <p>Proba de text lorem ipsum</p></div></div>
-    <div class="col-2" style="height:100px; border-style:solid"><div class="bg-secondary"> <p>Proba de text lorem ipsum</p></div></div>
+    <div class="col-10 col-md-4 col-lg-2 beeritem d-flex flex-md-wrap justify-content-around py-2">
+      
+          <img class="img-fluid offset-1 offset-sm-0" src="img/item1.jpg" alt="green devil"></img>
+          <div class="row justify-content-end offset-2 offset-md-0">
+              <p class="col-12 font-weight-bold">Green Devil IPA - Oakham Ales - 
+              IPA - American</p>
+              <p class="col-12 ">Precio unidad: 3,60€</p>
+              <div class="col-12 mr-1 text-center align-self-end bg-warning pt-3" style="height:25%">
+                  <p">Añadir al carrito</p>
+
+              </div>
+          </div>
+          
+    </div>
+    
+    
+    <div class="col-10 col-sm-4 col-lg-2 beeritem" ><div class="bg-secondary"> <p>Proba de text lorem ipsum</p></div></div>
+    
+    <div class="col-10 col-sm-4 col-lg-2 beeritem" ><div class="bg-secondary"> <p>Proba de text lorem ipsum</p></div></div>
+    
+    <div class="col-10 col-sm-4 col-lg-2 beeritem" ><div class="bg-secondary"> <p>Proba de text lorem ipsum</p></div></div>
+    
+    <div class="col-10 col-sm-4 col-lg-2 beeritem" ><div class="bg-secondary"> <p>Proba de text lorem ipsum</p></div></div>
+    
+    <div class="col-10 col-sm-4 col-lg-2 beeritem" ><div class="bg-secondary"> <p>Proba de text lorem ipsum</p></div></div>
 
   </div> <!-- end six items row -->
 
-
+    </section>
 </div><!--end container-->
 
 
