@@ -31,7 +31,7 @@
     
 
 
-<nav class="nav bg-warning navbar-expand">   
+<nav class="nav navbar-expand" style="background-color: var(--main);">   
 
         <p class="h1 logo nav-item col-5 col-md-3 nav-link">Beerkami</p>
         <div class="nav-item col-5  bg-white align-self-center rounded shadow d-flex p-0 mb-1">
@@ -46,7 +46,7 @@
 
 </nav> 
 
-<div class="container-fluid" style="background-color: rgb(0, 0, 0);">
+<div class="container-fluid" style="background-color: var(--second);">
 <nav class="nav  nav-fill">   
           <a class="nav-item nav-link text-white" href="#">Nav item</a>
           <a class="nav-item nav-link text-white" href="#">Nav item</a>
@@ -56,13 +56,13 @@
   </nav> 
 </div><!-- end container fluid-->
 
-<div class="container mt-5 p-0" style="background-color: rgb(228, 228, 228);">
+<div class="container mt-5 p-0" style=" background-color: rgb(228, 228, 228);">
 
   <section class="d-flex flex-wrap" style="position:relative;">
-    <div style="border-style:solid; border-width: 1px; color:orange; width:100%; position:absolute; margin-top: 1%; ">
+    <div style="border-style:solid; border-width: 1px 0 0 0; color: var(--main); width:100%; position:absolute; margin-top: 1%; ">
     </div>
     <div class="col-12 d-flex justify-content-center mt-n2 mt-lg-0">
-      <div class="px-3" style="background-color:white; ">El pack del mes</div>
+      <div class="px-3 separador">El pack del mes</div>
     </div>
 
     <div class="col-5 order-2 order-md-1 col-md-3 p-0 mt-md-3 " style="z-index:3;"> <!--container for skew block-->
@@ -79,18 +79,18 @@
             <li>Storm Hopper (APA)</li>
           </ul>
           <div class="d-lg-none">
-            <div class="text-center" style="border-style: solid; border-width:2px; background-color:orange; color:black; transform: skewX(-10deg);"><a class="text-decoration-none text-dark" href="#">¡Únete al pedido!</a></div>
-          <p class="text-center" style="color:orange">1000 usuarios = 15€</p>
+            <div class="text-center" style="border-style: solid; border-width:2px; background-color:var(--main); color:var(--second); transform: skewX(-10deg);"><a class="text-decoration-none text-dark" href="#">¡Únete al pedido!</a></div>
+          <p class="text-center" style="color: var(--main)">1000 usuarios = 15€</p>
         </div>
 
           </div>
           
 
-      <div class="d-flex skew justify-content-end" style="background-color:rgb(0, 0, 0); z-index:2; position: relative;" ><!--flex container with height-->
+      <div class="d-flex skew justify-content-end" style="background-color: var(--second); z-index:2; position: relative;" ><!--flex container with height-->
  
        
      
-          <div class="col-8 col-md-8 mr-n5" id="thismonth">
+          <div class="col-8 col-md-8 mr-n5" id="skewered">
           </div>
     
 
@@ -105,7 +105,7 @@
    <!-- counter area (round) -->
     <aside style="z-index:2; flex-grow: 1;" class="pl-0 order-3 ">
 
-        <div class="d-flex skew" style="background-color:orange;">
+        <div class="d-flex skew" style="background-color: var(--main);">
 
         <div class="align-self-center text-center" id="textcounter">
 
@@ -131,8 +131,8 @@
         </div>
 
         <div class="d-none d-lg-block">
-          <div class="text-center" style="border-style: solid; border-width:2px; background-color:black; color:orange;">¡Únete al pedido!</div>
-        <p class="text-center" style="color:black">1000 usuarios = 15€</p>
+          <div class="text-center" style="border-style: solid; border-width:2px; background-color: var(--second); color: var(--main);">¡Únete al pedido!</div>
+        <p class="text-center" style="color:var(--second)">1000 usuarios = 15€</p>
       </div>
 
      </div>
@@ -194,40 +194,162 @@
           
 </div><!-- second row end-->
 </section>
+
+<section class="row justify-content-center">
+  
+
+<div class="col-10 col-md-4" style="border-style: solid; height:300px;"></div>
+<div class="col-10 col-md-4 offset-md-1" style="border-style: solid; height:300px;"></div>
+
+</section>
+
 </div><!--end container section-->
 
 
 <div class="container"> 
     <section class="mt-5">
 
-  <div><p>Recien llegadas</p></div>
+  <div><p class="border-bottom border-dark">Recien llegadas</p></div>
   <div class="row justify-content-center"> <!--max six items row-->
    
-    <div class="col-10 col-md-4 col-lg-2 beeritem d-flex flex-md-wrap py-2 ">
-          <div class="col-6 col-md-12 text-center py-2 backpics"><img src="img/Harveys.png" alt="green devil"></img></div>
+    <div class="col-10 col-md-4 col-lg-2 beeritem d-flex flex-md-wrap py-2" style="background-color: white";>
+          <div class="col-6 col-md-12 text-center py-2 backpics"><img src="img/Harveys.png" alt="green devil"></img>
+          
+          <!-- carrito aparece en hover a partir de md-->  
+            <div class="col-12 text-center align-self-end bg-warning pt-3 rounded carritomd">
+              <img src="img/cart.png" alt=""></img>
+            </div>
+
+          
+          </div>
          
           <div class="row justify-content-center">
               <p class="col-10 font-weight-bold">Green Devil IPA - Oakham Ales - 
               IPA - American</p>
               <p class="col-10 ">Precio unidad: 3,60€</p>
-              <div class="col-8 text-center align-self-end bg-warning pt-3" style="height:20%">
-                  <p">Añadir al carrito</p>
+              <div class="col-8 text-center align-self-end bg-warning pt-3 rounded d-md-none" style="height:20%">
+                <img src="img/cart.png" alt=""></img>
 
               </div>
           </div>
           
     </div>
+
+    <div class="col-10 col-md-4 col-lg-2 beeritem d-flex flex-md-wrap py-2" style="background-color: white";>
+      <div class="col-6 col-md-12 text-center py-2 backpics"><img src="img/lecoq.png" alt="green devil"></img>
+      
+      <!-- carrito aparece en hover a partir de md-->  
+        <div class="col-12 text-center align-self-end bg-warning pt-3 rounded carritomd">
+          <img src="img/cart.png" alt=""></img>
+        </div>
+
+      
+      </div>
+     
+      <div class="row justify-content-center">
+          <p class="col-10 font-weight-bold">Green Devil IPA - Oakham Ales - 
+          IPA - American</p>
+          <p class="col-10 ">Precio unidad: 3,60€</p>
+          <div class="col-8 text-center align-self-end bg-warning pt-3 rounded d-md-none" style="height:20%">
+            <img src="img/cart.png" alt=""></img>
+
+          </div>
+      </div>
+      
+</div>
+
+<div class="col-10 col-md-4 col-lg-2 beeritem d-flex flex-md-wrap py-2" style="background-color: white";>
+  <div class="col-6 col-md-12 text-center py-2 backpics"><img src="img/red-duck.png" alt="green devil"></img>
+  
+  <!-- carrito aparece en hover a partir de md-->  
+    <div class="col-12 text-center align-self-end bg-warning pt-3 rounded carritomd">
+      <img src="img/cart.png" alt=""></img>
+    </div>
+
+  
+  </div>
+ 
+  <div class="row justify-content-center">
+      <p class="col-10 font-weight-bold">Green Devil IPA - Oakham Ales - 
+      IPA - American</p>
+      <p class="col-10 ">Precio unidad: 3,60€</p>
+      <div class="col-8 text-center align-self-end bg-warning pt-3 rounded d-md-none" style="height:20%">
+        <img src="img/cart.png" alt=""></img>
+
+      </div>
+  </div>
+  
+</div>
+
+<div class="col-10 col-md-4 col-lg-2 beeritem d-flex flex-md-wrap py-2" style="background-color: white";>
+  <div class="col-6 col-md-12 text-center py-2 backpics"><img src="img/gosefish.png" alt="green devil"></img>
+  
+  <!-- carrito aparece en hover a partir de md-->  
+    <div class="col-12 text-center align-self-end bg-warning pt-3 rounded carritomd">
+      <img src="img/cart.png" alt=""></img>
+    </div>
+
+  
+  </div>
+ 
+  <div class="row justify-content-center">
+      <p class="col-10 font-weight-bold">Green Devil IPA - Oakham Ales - 
+      IPA - American</p>
+      <p class="col-10 ">Precio unidad: 3,60€</p>
+      <div class="col-8 text-center align-self-end bg-warning pt-3 rounded d-md-none" style="height:20%">
+        <img src="img/cart.png" alt=""></img>
+
+      </div>
+  </div>
+  
+</div>
+
+<div class="col-10 col-md-4 col-lg-2 beeritem d-flex flex-md-wrap py-2" style="background-color: white";>
+  <div class="col-6 col-md-12 text-center py-2 backpics"><img src="img/brewdog-kingpin.png" alt="green devil"></img>
+  
+  <!-- carrito aparece en hover a partir de md-->  
+    <div class="col-12 text-center align-self-end bg-warning pt-3 rounded carritomd">
+      <img src="img/cart.png" alt=""></img>
+    </div>
+
+  
+  </div>
+ 
+  <div class="row justify-content-center">
+      <p class="col-10 font-weight-bold">Green Devil IPA - Oakham Ales - 
+      IPA - American</p>
+      <p class="col-10 ">Precio unidad: 3,60€</p>
+      <div class="col-8 text-center align-self-end bg-warning pt-3 rounded d-md-none" style="height:20%">
+        <img src="img/cart.png" alt=""></img>
+
+      </div>
+  </div>
+  
+</div>
+
+<div class="col-10 col-md-4 col-lg-2 beeritem d-flex flex-md-wrap py-2" style="background-color: white";>
+  <div class="col-6 col-md-12 text-center py-2 backpics"><img src="img/Eureka.png" alt="green devil"></img>
+  
+  <!-- carrito aparece en hover a partir de md-->  
+    <div class="col-12 text-center align-self-end bg-warning pt-3 rounded carritomd">
+      <img src="img/cart.png" alt=""></img>
+    </div>
+
+  
+  </div>
+ 
+  <div class="row justify-content-center">
+      <p class="col-10 font-weight-bold">Green Devil IPA - Oakham Ales - 
+      IPA - American</p>
+      <p class="col-10 ">Precio unidad: 3,60€</p>
+      <div class="col-8 text-center align-self-end bg-warning pt-3 rounded d-md-none" style="height:20%">
+        <img src="img/cart.png" alt=""></img>
+
+      </div>
+  </div>
+  
+</div>
     
-    
-    <div class="col-10 col-sm-4 col-lg-2 beeritem" ><div class="bg-secondary"> <p>Proba de text lorem ipsum</p></div></div>
-    
-    <div class="col-10 col-sm-4 col-lg-2 beeritem" ><div class="bg-secondary"> <p>Proba de text lorem ipsum</p></div></div>
-    
-    <div class="col-10 col-sm-4 col-lg-2 beeritem" ><div class="bg-secondary"> <p>Proba de text lorem ipsum</p></div></div>
-    
-    <div class="col-10 col-sm-4 col-lg-2 beeritem" ><div class="bg-secondary"> <p>Proba de text lorem ipsum</p></div></div>
-    
-    <div class="col-10 col-sm-4 col-lg-2 beeritem" ><div class="bg-secondary"> <p>Proba de text lorem ipsum</p></div></div>
 
   </div> <!-- end six items row -->
 

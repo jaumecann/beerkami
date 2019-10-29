@@ -1,4 +1,11 @@
 
+    :root {
+      --main: #ff9900;
+      --second: black;
+      --third: #ffffcc;
+
+    }
+    
     body {
       background-color: rgb(228, 228, 228);
     }
@@ -23,6 +30,13 @@
       background-color: white;
     }
 
+    .separador {
+      background-color:white; 
+      border-style:solid;
+      border-color: var(--main);
+      border-width: 1px;
+      transform: skewX(-10deg)
+    }
   
 
     .skew {
@@ -32,8 +46,8 @@
 
     h2 {
       width: 200%; 
-      color:orange; 
-      background-color:lightyellow; 
+      color: var(--main); 
+      background-color:var(--third); 
       position:relative;
       text-shadow: 1px 1px 1px black;
     }
@@ -43,7 +57,7 @@
       width: 25%;
       height: 100%;
       transform:skewX(-10deg);
-      background-color:lightyellow;
+      background-color:var(--third);
       position: absolute;
     }
 
@@ -56,8 +70,8 @@
 
     }
 
-    #thismonth {
-     background-color: rgb(0, 0, 0); 
+    #skewered {
+     background-color: var(--second); 
      transform:skewX(-10deg); 
      
     }
@@ -96,11 +110,11 @@
       border-radius: 150px;
       border-width: ;
       border-style: ;
-      box-shadow: 1px 1px 5px orange, -1px -1px 5px orange;
+      box-shadow: 1px 1px 5px var(--main), -1px -1px 5px var(--main);
       position: absolute;
       bottom:25%;
       right:-5%;
-      background-color: orange;
+      background-color: var(--main);
       font-family: 'Anton', sans-serif; 
   
     }
@@ -118,12 +132,24 @@
     }
 
     .beeritem {
-      border-style:solid;
       font-size: .9rem;
     }
 
     .backpics {
       background-image: linear-gradient(-45deg, rgb(231, 231, 229), rgb(247, 245, 235), rgb(231, 231, 229));
+    }
+
+    .carritomd {
+      height:20%; 
+      position:absolute; 
+      bottom:0; 
+      left:0; 
+      opacity:0.8;
+      display:none;
+    }
+
+    .beeritem:hover .carritomd {
+      display:inline;
     }
 
 
@@ -132,7 +158,7 @@
     @media (max-width: 767px) {
 
       .skew {
-        height:300px;
+        height:320px;
 
       }
 
@@ -153,6 +179,10 @@
         margin-bottom: 2rem;
   
       }
+
+      .beeritem:hover .carritomd {
+        display:none;
+      }
   }
 
 
@@ -163,11 +193,10 @@
       height:250px; 
       width:250px;
       border-radius: 150px;
-      
       position: absolute;
       bottom:-5%;
       right: -10%;
-      background-color: orange;
+      background-color: var(--main);
       font-family: 'Anton', sans-serif; 
       font-size: .9rem;
     }
