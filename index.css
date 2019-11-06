@@ -4,6 +4,7 @@
       --second: black;
       --third: #ffffcc;
       --maingray: #e4e4e4;
+      --mybrown: #b6977a;
 
     }
     
@@ -26,17 +27,50 @@
     }
 
     .hashbox {
-      box-shadow: 0 0 4px 0 rgba(0,0,0,0.15);
+      /*box-shadow: 0 0 4px 0 rgba(0,0,0,0.15)*/;
       font-size: 0.9em;
-      background-color: white;
+      /*background-color: white;*/
     }
 
     .separador {
-      background-color:white; 
-      border-style:solid;
-      border-color: var(--main);
-      border-width: 1px;
-      transform: skewX(-10deg)
+      background-color: #702807;
+      /*background-image: linear-gradient(to right, var(--mybrown), var(--mybrown), #702807,  #702807, #702807,  #702807, var(--mybrown), var(--mybrown));*/ 
+      border-style:;
+      border-radius: 10px;
+      border-color: var(--mybrown);
+      border-width: ;
+      /*transform: skewX(-10deg);*/
+      color: var(--white);
+      font-weight: bold;
+      text-shadow: 1px 1px black;
+      font-size: 1.2em;
+      position:relative;
+  
+    }
+
+    .separador::before {
+      content: "";
+      position: absolute;
+      width: 20px;
+      height: 15px;
+      background-color: #702807;
+      left: -10px;
+      top:30%;
+      border-radius:5px;
+      border-left: solid 2px black;
+      
+    }
+
+    .separador::after {
+      content: "";
+      position: absolute;
+      width: 20px;
+      height: 15px;
+      background-color: #702807;
+      right:-10px;
+      top:30%;
+      border-radius:5px;
+      border-right: solid 2px black;
     }
   
 
@@ -132,13 +166,26 @@
 
     }
 
+    .minisep {
+    
+    }
+
+    .minisep p {
+      color: /* #702807*/ black;
+      border-bottom-style: solid;
+      border-bottom-width: 1px;
+      font-size: 1.5em;
+      font-family: 'Contrail One', cursive;
+    }
+
+
     .beeritem {
       font-size: .9rem;
       margin-bottom: 15px;
     }
 
     .backpics {
-      background-image: linear-gradient(-45deg, rgb(231, 231, 229), rgb(247, 245, 235), rgb(231, 231, 229));
+      background-image: linear-gradient(-45deg, #ffefd1, #b6977a, #b6977a, #ffefd1);
     }
 
     .carritomd {
@@ -183,11 +230,24 @@
       /*background-image:linear-gradient(var(--maingray),gray, black, black);
   */
       color: rgb(197, 130, 6);
-      border-style:solid;
+      font-size: .9em;
     }
 
     li {
       list-style-type: none;
+      color: white;
+    }
+
+    .social {
+      border-radius: 10px;
+      color:white;
+      height: 50px;
+      background-color: white /* rgb(197, 130, 6)*/;
+    }
+
+    .social img {
+      max-height: 100%;
+     
     }
 
 
