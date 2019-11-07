@@ -5,6 +5,7 @@
       --third: #ffffcc;
       --maingray: #e4e4e4;
       --mybrown: #b6977a;
+      --darkbrown: #570202;
 
     }
     
@@ -21,34 +22,51 @@
       border-radius: 1%;
     }
 
+    .lupacont {
+      height: 40px;
+      padding: 2px;
+    
+
+    }
     
     #explain {
-      background-color: #fcf5ec;
+      background-color: var(--mybrown);
     }
 
     .hashbox {
       /*box-shadow: 0 0 4px 0 rgba(0,0,0,0.15)*/;
       font-size: 0.9em;
-      /*background-color: white;*/
+      background-color: white;
+      border-radius: 3%;
     }
 
     .separador {
-      background-color: #702807;
-      /*background-image: linear-gradient(to right, var(--mybrown), var(--mybrown), #702807,  #702807, #702807,  #702807, var(--mybrown), var(--mybrown));*/ 
+      background-color: var(--darkbrown);
+      background-image: linear-gradient(to right, var(--maingray), var(--mybrown), #702807,  #702807, #702807,  #702807, var(--mybrown), var(--maingray));*/ 
       border-style:;
-      border-radius: 10px;
-      border-color: var(--mybrown);
+      border-radius: ;
+      width: 100%;
       border-width: ;
       /*transform: skewX(-10deg);*/
-      color: var(--white);
+      color: white;
       font-weight: bold;
-      text-shadow: 1px 1px black;
-      font-size: 1.2em;
+      text-shadow: -3px -3px 1px var(--darkbrown);
+      font-size: 1.5em;
       position:relative;
-  
+      text-align: center;
+      height:20px;
+      font-family: 'Contrail One', cursive;
+
     }
 
+    .separador p {
+      margin-top:-12px;
+
+    }
+
+    /*
     .separador::before {
+    
       content: "";
       position: absolute;
       width: 20px;
@@ -72,7 +90,7 @@
       border-radius:5px;
       border-right: solid 2px black;
     }
-  
+  */
 
     .skew {
       height:85%;
@@ -113,6 +131,7 @@
 
     #concepts{
       font-size: .85rem;
+
     }
 
 
