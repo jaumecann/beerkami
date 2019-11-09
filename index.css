@@ -10,12 +10,15 @@
     }
     
     body {
-      background-color: var(--maingray);
+    background-color: var(--maingray);
+   
     }
 
 
     .logo {
-     font-family: 'Anton', sans-serif;  
+     font-family: 'Anton', sans-serif; 
+     color: black; 
+     text-shadow: 1px 1px white;
     }
 
     .searchbar {
@@ -30,7 +33,15 @@
     }
     
     #explain {
-      background-color: var(--mybrown);
+      background-color:;
+    }
+
+    .section-1 {
+      position: relative;
+      padding: 15px 5px 25px 25px;
+      background-color: rgb(211, 138, 4);
+      border-radius: 5px;
+      box-shadow: 1px 1px 3px black;
     }
 
     .hashbox {
@@ -38,30 +49,33 @@
       font-size: 0.9em;
       background-color: white;
       border-radius: 3%;
+      border-style: solid;
+      border-width: 2px;
+      
+
     }
 
-    .separador {
-      background-color: var(--darkbrown);
-      background-image: linear-gradient(to right, var(--maingray), var(--mybrown), #702807,  #702807, #702807,  #702807, var(--mybrown), var(--maingray));*/ 
-      border-style:;
-      border-radius: ;
-      width: 100%;
-      border-width: ;
-      /*transform: skewX(-10deg);*/
-      color: white;
-      font-weight: bold;
-      text-shadow: -3px -3px 1px var(--darkbrown);
-      font-size: 1.5em;
-      position:relative;
-      text-align: center;
-      height:20px;
-      font-family: 'Contrail One', cursive;
+    
 
+    .separador {
+   
+    width: 100%;
+    /*transform: skewX(-10deg);*/
+    color: white;
+    font-weight: ;
+    text-shadow: -1px -1px 1px var(--darkbrown);
+    font-size: 1.5em;
+    position:relative;
+    height:2px;
+    font-family: 'Contrail One', cursive;
     }
 
     .separador p {
-      margin-top:-12px;
-
+      margin-top: -15px;
+      background-color: var(--darkbrown);
+      height: 30px;
+      padding: 0 5px 5px 5px;
+    
     }
 
     /*
@@ -131,7 +145,8 @@
 
     #concepts{
       font-size: .85rem;
-
+     
+    
     }
 
 
@@ -164,11 +179,11 @@
       border-radius: 150px;
       border-width: ;
       border-style: ;
-      box-shadow: 1px 1px 5px var(--main), -1px -1px 5px var(--main);
+      box-shadow: 1px 1px 5px  #e6cb0ced;, -1px -1px 5px  #e6cb0ced;;
       position: absolute;
       bottom:25%;
       right:-5%;
-      background-color: var(--main);
+      background-color: #e6cb0ced;
       font-family: 'Anton', sans-serif; 
   
     }
@@ -178,11 +193,58 @@
       color: rgb(255, 255, 255);
       height: 15%;
       display: inline-block; 
-      
       text-shadow: 5px 5px 10px black;
       border-style:;
       border-width: 1px;    
 
+    }
+
+    .box-seccion {
+      width: 500px;
+      height: 300px;
+      position: relative;
+      overflow: hidden;
+      box-shadow: 1px 1px 5px black;
+  
+    }
+
+    .box-seccion:nth-of-type(1) {
+      background-image: linear-gradient(-125deg, black, var(--darkbrown));
+      font-family: 'Anton', sans-serif;  
+      color: white;
+    }
+
+    .box-seccion:nth-of-type(2) {
+      background-color: #F1E6D2;
+      font-family: 'Fredericka the Great', cursive; 
+      
+    }
+
+    .box-seccion:nth-of-type(1) p {
+      position: absolute;
+      font-size: 2.8em;
+      text-shadow: 2px 2px 30px orange;
+      left:30px;
+    }
+
+    .box-seccion:nth-of-type(2) p {
+      position: absolute;
+      font-size: 3em;
+      left:30px;
+      color: var(--darkbrown);
+      background-color: #F1E6D2;
+      
+    }
+
+    .box-seccion:nth-of-type(1) img {
+    
+     
+    }
+
+    .box-seccion:nth-of-type(2) img {
+      height: 145%;
+     
+     
     }
 
     .minisep {
@@ -204,7 +266,7 @@
     }
 
     .backpics {
-      background-image: linear-gradient(-45deg, #ffefd1, #b6977a, #b6977a, #ffefd1);
+      background-image: linear-gradient(-45deg, #ffefd1,  #ceb8a3, #ffefd1);
     }
 
     .carritomd {
@@ -224,7 +286,7 @@
       width: 150px;
       height: 150px;
       color:white;
-      text-shadow: 1px 1px 1px black;
+      text-shadow: 2px 1px 1px black;
       font-size: 2em;
       justify-content: center; 
       display: flex;
@@ -288,6 +350,7 @@
         box-shadow: none;
         border-style: none;
         margin-left: 15%;
+        background-color: var(--main);
       
       }
 
@@ -314,7 +377,7 @@
       position: absolute;
       bottom:-5%;
       right: -10%;
-      background-color: var(--main);
+      background-color:  #e6cb0ced;
       font-family: 'Anton', sans-serif; 
       font-size: .9rem;
     }
