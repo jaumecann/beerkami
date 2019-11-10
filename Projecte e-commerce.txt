@@ -1,0 +1,24 @@
+﻿Beerkami: Portal de compra col·lectiva de cervesa artesana. On els usuaris poden:
+
+
+1. Afegir-se a la compra d’un pack mensual de cervesa a preus assequibles. A més usuaris, més barat surt el pack. Una especie de ‘crowdfunding’ cerveser.
+2. Comprar a la botiga 
+
+
+Usuaris: 
+
+
+-Col·laborador en la compra del pack col·lectiu
+-Comprador puntual de la botiga
+-Aficionats a la cervesa
+
+
+Funcionalitats:
+
+
+-Projecte mensual de compra col·lectiva
+-Botiga virtual
+-Recomanacions de l’expert
+-Continguts relacionats amb el món de la cervesa
+-Catàleg / categorització cerveses
+-Perfil usuari amb historial compres, estat enviament...
