@@ -24,42 +24,40 @@
 </head>
 
 <body>
-<!-- 
-
-  style="border-style: solid
-
--->
-
-    
+   
 
 
 <nav class="nav navbar-expand topbar">   
 
         <div class="logo nav-item col-7 col-sm-6 col-md-3 nav-link d-flex justify-content-start align-items-start p-0"><img src="img/logo1.png"><p class="h1">Beerkami</p></div>
-        <div class="nav-item d-none col-5 col-md-4  bg-white align-self-center rounded shadow d-md-flex p-0 mb-1 offset-md-3 " style="height:35px; overflow:hidden">
+
+        <div class="nav-item d-none d-md-flex col-5 col-md-4 col-xl-3 bg-white align-self-center shadow p-0 mb-1 offset-md-3 offset-xl-4 justify-content-between searchbox">
        
-          <div class="col-9 col-md-9 col-lg-10 pt-1"><input type="text" style="border:0px; width:120px;"></div>
-          <div class="col-3 col-md-3 col-lg-2 d-flex justify-content-center" style="height:35px; background-color:lightgrey;"><div class="lupacont"><img class="p-1" src="img/search.png" alt="search icon" style="height:100%;"></img></div>
-        </div>
+          <div class="col-9 col-md-9 col-lg-10 pt-1">
+            <input type="text" style="border:0px; width:100%;">
+          </div>
+          
+          <div class="d-flex justify-content-center"><div class="lupacont"><img class="p-1" src="img/search.png" alt="search icon" style="height:100%;"></img></div>
+          </div>
         
         </div>
-        <a class="nav-item align-self-center offset-3 offset-md-0 col-1 nav-link text-white" href="#">Nav item</a>
-        <a class="nav-item align-self-center col-1 nav-link text-white" href="#">Nav item</a>
+        <a class="nav-item align-self-center offset-3 offset-md-0 nav-link ml-lg-3 ml-xl-5" href="#"><img src="img/user.png" alt="usuario"></a>
+        <a class="nav-item align-self-center nav-link" href="#"><img src="img/cart.png" alt="carro"></a>
       
 
 </nav> 
 
-<div class="container-fluid" style="background-color: var(--second);">
-<nav class="nav  nav-fill">   
-          <a class="nav-item nav-link text-white" href="#">El pedido</a>
-          <a class="nav-item nav-link text-white" href="#">La tienda</a>
-          <a class="nav-item nav-link text-white" href="#">El experto</a>
-          <a class="nav-item nav-link text-white" href="#">Comunidad</a>
+<div class="container-fluid nav-1 d-flex justify-content-around">
+<nav class="nav">   
+          <a class="nav-item nav-link text-white" href="#"><p>El pedido</p></a>
+          <a class="nav-item nav-link text-white" href="#"><p>La tienda</p></a>
+          <a class="nav-item nav-link text-white" href="#"><p>El experto</p></a>
+          <a class="nav-item nav-link text-white" href="#"><p>Comunidad</p></a>
           
   </nav> 
 </div><!-- end container fluid-->
 
-<div class="container mt-5 p-0">
+<div class="container pt-5 color-cont">
 
   <section class="d-flex flex-wrap section-1">
 
@@ -69,11 +67,14 @@
     </div>
 -->
 
-    <div class="col-12 d-flex  mt-n2 mt-lg-0">
-      <div class="px-5 mb-3 separador d-flex justify-content-center"><p>El pack del mes</p></div>
+    <div class="col-12 d-flex  mt-n2 mt-lg-0 justify-content-center">
+      <div class="px-5 mb-3 d-flex justify-content-center"><p class="separador">El pack del mes</p></div>
     </div>
 
-    <div class="col-5 order-2 order-md-1 col-md-3 p-0 mt-md-3 " style="z-index:3;"> <!--container for skew block-->
+    <div class="col-5 order-2 order-md-1 col-md-3 p-0 mt-md-3 " style="z-index:3;"> 
+     
+    
+  <!--container for skew block-->
 
       <div style="z-index:3;" id="packtext">
         <h2 class="display-4 pl-2">Especial HopBox</h2> 
@@ -158,14 +159,6 @@
 
 <div class="container pb-5 pt-5" id="explain">
 <section>
-<!--
-  capçalera??
- <div class="row justify-content-center mt-5">
-  <div class="h3 col-4 text-center""><p style="font-family:'Anton', sans-serif; ">¿Cómo Funciona?</p></div>
-</div> 
-
--->
-
 
 <div id="concepts" class="row justify-content-center pb-5 mb-5">
 
@@ -223,14 +216,14 @@
 </div><!--end container sections-->
 
 
-<div class="container"> 
-    <section class="mt-5">
+<div class="container color-cont"> 
+    <section>
 
-  <div class="minisep mb-5"><p>Recien llegadas</p></div>
+  <div class="minisep py-5"><p>Recien llegadas</p></div>
   <div class="row justify-content-center"> <!--max six items row-->
    
-    <div class="col-10 col-md-4 col-lg-2 beeritem d-flex flex-md-wrap py-2" style="background-color: white";>
-          <div class="col-6 col-md-12 text-center py-2 backpics"><img src="img/Harveys.png" alt="green devil"></img>
+    <div class="col-10 col-md-4 col-lg-2 beeritem d-flex flex-md-wrap py-2">
+          <div class="col-6 col-md-12 text-center py-2 backpics"><img class="img-fluid" src="img/Harveys.png" alt="green devil"></img>
           
           <!-- carrito aparece en hover a partir de md-->  
             <div class="col-12 text-center align-self-end bg-warning pt-3 rounded carritomd">
@@ -241,9 +234,9 @@
           </div>
          
           <div class="row justify-content-center">
-              <p class="col-10 font-weight-bold mt-md-2">Green Devil IPA - Oakham Ales - 
+              <p class="col-10 col-lg-12 font-weight-bold mt-md-2">Green Devil IPA - Oakham Ales - 
               IPA - American</p>
-              <p class="col-10 ">Precio unidad: 3,60€</p>
+              <p class="col-10 col-lg-12 ">Precio unidad: 3,60€</p>
               <div class="col-8 text-center align-self-end bg-warning pt-3 rounded d-md-none" style="height:20%">
                 <img src="img/cart.png" alt=""></img>
 
@@ -252,8 +245,8 @@
           
     </div>
 
-    <div class="col-10 col-md-4 col-lg-2 beeritem d-flex flex-md-wrap py-2" style="background-color: white";>
-      <div class="col-6 col-md-12 text-center py-2 backpics"><img src="img/lecoq.png" alt="green devil"></img>
+    <div class="col-10 col-md-4 col-lg-2 beeritem d-flex flex-md-wrap py-2">
+      <div class="col-6 col-md-12 text-center py-2 backpics"><img class="img-fluid" src="img/lecoq.png" alt="green devil"></img>
       
       <!-- carrito aparece en hover a partir de md-->  
         <div class="col-12 text-center align-self-end bg-warning pt-3 rounded carritomd">
@@ -264,9 +257,9 @@
       </div>
      
       <div class="row justify-content-center">
-          <p class="col-10 font-weight-bold mt-md-2">Green Devil IPA - Oakham Ales - 
+          <p class="col-10 col-lg-12 font-weight-bold mt-md-2">Green Devil IPA - Oakham Ales - 
           IPA - American</p>
-          <p class="col-10 ">Precio unidad: 3,60€</p>
+          <p class="col-10 col-lg-12 ">Precio unidad: 3,60€</p>
           <div class="col-8 text-center align-self-end bg-warning pt-3 rounded d-md-none" style="height:20%">
             <img src="img/cart.png" alt=""></img>
 
@@ -275,8 +268,8 @@
       
 </div>
 
-<div class="col-10 col-md-4 col-lg-2 beeritem d-flex flex-md-wrap py-2" style="background-color: white";>
-  <div class="col-6 col-md-12 text-center py-2 backpics"><img src="img/red-duck.png" alt="green devil"></img>
+<div class="col-10 col-md-4 col-lg-2 beeritem d-flex flex-md-wrap py-2">
+  <div class="col-6 col-md-12 text-center py-2 backpics"><img  class="img-fluid" src="img/red-duck.png" alt="green devil"></img>
   
   <!-- carrito aparece en hover a partir de md-->  
     <div class="col-12 text-center align-self-end bg-warning pt-3 rounded carritomd">
@@ -287,9 +280,9 @@
   </div>
  
   <div class="row justify-content-center">
-      <p class="col-10 font-weight-bold mt-md-2">Green Devil IPA - Oakham Ales - 
+      <p class="col-10 col-lg-12 font-weight-bold mt-md-2">Green Devil IPA - Oakham Ales - 
       IPA - American</p>
-      <p class="col-10 ">Precio unidad: 3,60€</p>
+      <p class="col-10 col-lg-12 ">Precio unidad: 3,60€</p>
       <div class="col-8 text-center align-self-end bg-warning pt-3 rounded d-md-none" style="height:20%">
         <img src="img/cart.png" alt=""></img>
 
@@ -298,8 +291,8 @@
   
 </div>
 
-<div class="col-10 col-md-4 col-lg-2 beeritem d-flex flex-md-wrap py-2" style="background-color: white";>
-  <div class="col-6 col-md-12 text-center py-2 backpics"><img src="img/gosefish.png" alt="green devil"></img>
+<div class="col-10 col-md-4 col-lg-2 beeritem d-flex flex-md-wrap py-2">
+  <div class="col-6 col-md-12 text-center py-2 backpics"><img  class="img-fluid" src="img/gosefish.png" alt="green devil"></img>
   
   <!-- carrito aparece en hover a partir de md-->  
     <div class="col-12 text-center align-self-end bg-warning pt-3 rounded carritomd">
@@ -310,9 +303,9 @@
   </div>
  
   <div class="row justify-content-center">
-      <p class="col-10 font-weight-bold mt-md-2">Green Devil IPA - Oakham Ales - 
+      <p class="col-10 col-lg-12 font-weight-bold mt-md-2">Green Devil IPA - Oakham Ales - 
       IPA - American</p>
-      <p class="col-10 ">Precio unidad: 3,60€</p>
+      <p class="col-10 col-lg-12 ">Precio unidad: 3,60€</p>
       <div class="col-8 text-center align-self-end bg-warning pt-3 rounded d-md-none" style="height:20%">
         <img src="img/cart.png" alt=""></img>
 
@@ -321,8 +314,8 @@
   
 </div>
 
-<div class="col-10 col-md-4 col-lg-2 beeritem d-flex flex-md-wrap py-2" style="background-color: white";>
-  <div class="col-6 col-md-12 text-center py-2 backpics"><img src="img/brewdog-kingpin.png" alt="green devil"></img>
+<div class="col-10 col-md-4 col-lg-2 beeritem d-flex flex-md-wrap py-2">
+  <div class="col-6 col-md-12 text-center py-2 backpics"><img  class="img-fluid" src="img/brewdog-kingpin.png" alt="green devil"></img>
   
   <!-- carrito aparece en hover a partir de md-->  
     <div class="col-12 text-center align-self-end bg-warning pt-3 rounded carritomd">
@@ -333,9 +326,9 @@
   </div>
  
   <div class="row justify-content-center">
-      <p class="col-10 font-weight-bold mt-md-2">Green Devil IPA - Oakham Ales - 
+      <p class="col-10 col-lg-12 font-weight-bold mt-md-2">Green Devil IPA - Oakham Ales - 
       IPA - American</p>
-      <p class="col-10 ">Precio unidad: 3,60€</p>
+      <p class="col-10 col-lg-12 ">Precio unidad: 3,60€</p>
       <div class="col-8 text-center align-self-end bg-warning pt-3 rounded d-md-none" style="height:20%">
         <img src="img/cart.png" alt=""></img>
 
@@ -344,8 +337,8 @@
   
 </div>
 
-<div class="col-10 col-md-4 col-lg-2 beeritem d-flex flex-md-wrap py-2" style="background-color: white";>
-  <div class="col-6 col-md-12 text-center py-2 backpics"><img src="img/Eureka.png" alt="green devil"></img>
+<div class="col-10 col-md-4 col-lg-2 beeritem d-flex flex-md-wrap py-2">
+  <div class="col-6 col-md-12 text-center py-2 backpics"><img class="img-fluid" src="img/Eureka.png" alt="green devil"></img>
   
   <!-- carrito aparece en hover a partir de md-->  
     <div class="col-12 text-center align-self-end bg-warning pt-3 rounded carritomd">
@@ -356,9 +349,9 @@
   </div>
  
   <div class="row justify-content-center">
-      <p class="col-10 font-weight-bold mt-md-2">Green Devil IPA - Oakham Ales - 
+      <p class="col-10 col-lg-12 font-weight-bold mt-md-2">Green Devil IPA - Oakham Ales - 
       IPA - American</p>
-      <p class="col-10 ">Precio unidad: 3,60€</p>
+      <p class="col-10 col-lg-12 ">Precio unidad: 3,60€</p>
       <div class="col-8 text-center align-self-end bg-warning pt-3 rounded d-md-none" style="height:20%">
         <img src="img/cart.png" alt=""></img>
 
@@ -375,7 +368,7 @@
     <section class="mt-5"> <!-- section beer styles-->
       <div class="minisep mb-5"><p>Busca tu tipo</p></div>
 
-      <div class="d-flex flex-wrap justify-content-around col-md-10 col-lg-8 col-xl-12 m-md-auto">
+      <div class="d-flex flex-wrap justify-content-around col-md-10 col-lg-8 col-xl-12 mx-md-auto pb-5">
         <a href="#" style="text-decoration: none;"> <div class="beertype mx-md-1 mb-3" style="background-color:#C06D39"> <div class="backgradi"></div> IPA</div></a>
         <a href="#" style="text-decoration: none;"> <div class="beertype mx-md-1 mb-3" style="background-color:#D09843"> <div class="backgradi"></div><span class="ml-md-3 ml-lg-0">Pale Ale</span></div></a>
         <a href="#" style="text-decoration: none;"> <div class="beertype mx-md-1 mb-3" style="background-color:#FECC5E "> <div class="backgradi"></div> Lager</div></a>
@@ -393,7 +386,7 @@
 
 <div class="container-fluid">
 
-    <footer class="row mt-5 pt-5">
+    <footer class="row pt-3">
 
         <div class="col-6 col-md-3">
         <p>Sobre nosotros</p>
@@ -413,19 +406,19 @@
           </ul>
         </div>
     
-        <div class="col-6 col-md-3">
+        <div class="col-6 col-md-2 col-lg-3">
             <p>Contacta</p>
             <ul>
-              <li>Envíos</li>
-              <li>Términos de contratación</li>
-              <li>Privacidad</li>
+              <li>Mail</li>
+              <li>Teléfono</li>
+              <li>Preguntas frecuentes</li>
             </ul>
           </div>
     
-          <div class="col-6 col-md-3">
+          <div class="col-6 col-md-4 col-lg-3">
               <p>Síguenos</p>
               <ul>
-                <li style="margin: 0 20px 0 -20px;"><div class="d-flex social justify-content-around p-1">
+                <li style="margin: 0 10px 0 -10px;"><div class="d-flex social justify-content-around p-1">
                   <img src="img/twitter.svg" alt="twitter">
                   <img src="img/facebook.svg" alt="facebook">
                   <img src="img/instagram.svg" alt="instagram">
