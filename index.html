@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" >
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Beerkami</title>
   <!-- Latest compiled and minified CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
@@ -29,7 +30,7 @@
 
 <nav class="nav navbar-expand topbar">   
 
-        <div class="logo nav-item col-7 col-sm-6 col-md-3 nav-link d-flex justify-content-start align-items-start p-0"><img src="img/logo1.png"><p class="h1">Beerkami</p></div>
+        <div class="logo nav-item col-7 col-sm-6 col-md-3 nav-link d-flex justify-content-start p-0"><img class="img-fluid" src="img/logo1.png"><h1>Beerkami<h1></div>
 
         <div class="nav-item d-none d-md-flex col-5 col-md-4 col-xl-3 bg-white align-self-center shadow p-0 mb-1 offset-md-3 offset-xl-4 justify-content-between searchbox">
        
@@ -41,8 +42,14 @@
           </div>
         
         </div>
-        <a class="nav-item align-self-center offset-3 offset-md-0 nav-link ml-lg-3 ml-xl-5" href="#"><img src="img/user.png" alt="usuario"></a>
-        <a class="nav-item align-self-center nav-link" href="#"><img src="img/cart.png" alt="carro"></a>
+
+        <div class="top-icons d-flex offset-2 offset-sm-4 offset-md-0 ">
+
+          <a class="nav-item align-self-center nav-link ml-lg-4 ml-xl-5" href="#"><img src="img/user.png" alt="usuario"></a>
+          <a class="nav-item align-self-center nav-link ml-n4" href="#"><img src="img/cart.png" alt="carro"></a>
+
+        </div>
+    
       
 
 </nav> 
@@ -51,7 +58,7 @@
 <nav class="nav">   
           <a class="nav-item nav-link text-white" href="#"><p>El pedido</p></a>
           <a class="nav-item nav-link text-white" href="#"><p>La tienda</p></a>
-          <a class="nav-item nav-link text-white" href="#"><p>El experto</p></a>
+          <a class="nav-item nav-link text-white d-none d-sm-inline" href="#"><p>El experto</p></a>
           <a class="nav-item nav-link text-white" href="#"><p>Comunidad</p></a>
           
   </nav> 
@@ -68,7 +75,7 @@
 -->
 
     <div class="col-12 d-flex  mt-n2 mt-lg-0 justify-content-center">
-      <div class="px-5 mb-3 d-flex justify-content-center"><p class="separador">El pack del mes</p></div>
+      <div class="pr-3 mb-3 d-flex justify-content-center"><p class="separador">El pack del mes</p></div>
     </div>
 
     <div class="col-5 order-2 order-md-1 col-md-3 p-0 mt-md-3 " style="z-index:3;"> 
@@ -77,9 +84,9 @@
   <!--container for skew block-->
 
       <div style="z-index:3;" id="packtext">
-        <h2 class="display-4 pl-2">Especial HopBox</h2> 
+        <h2 class="pl-2">Especial HopBox</h2> 
         <p class="d-none d-lg-inline-block ml-3 pb-2 entrada">Lo más exquisito de la artesana de Nueva Zelanda ya está aquí, con las variedades de lúpulos más picantes y afrutadas. Estas son las elegidas para nuestro pack mensual. ¡Ya somos más de 500!</p>
-          <ul>
+          <ul class="beer-list">
             <li>Beyond the Clouds (IPA)</li>
             <li>Boneface The Unit (IPA)</li>
             <li>The Duke (IPA Rye)</li>
@@ -118,7 +125,7 @@
 
         <div class="align-self-center text-center" id="textcounter">
 
-          <p class="mt-5 mt-md-4"><span style="font-size:3rem">16,50€</span></p>
+          <p class="mt-5 mt-md-4"><span class="price">16,50€</span></p>
           <div class="d-flex justify-content-around">
             <div class="nospace">
                 <p>Somos</p>
@@ -207,7 +214,7 @@
 </div>
 
 <div class="mb-5 mb-lg-0 box-seccion d-flex justify-content-end rounded">
-    <p class="align-self-center">El<br> árbol<br>de la<br>birra</p>
+    <p class="align-self-center mb-0 pr-2" style="height:100%">El<br> árbol<br>de la<br>birra</p>
     <img src="img/types.png">
 </div>
 
@@ -406,7 +413,7 @@
           </ul>
         </div>
     
-        <div class="col-6 col-md-2 col-lg-3">
+        <div class="col-4 col-sm-6 col-md-2 col-lg-3">
             <p>Contacta</p>
             <ul>
               <li>Mail</li>
@@ -415,8 +422,8 @@
             </ul>
           </div>
     
-          <div class="col-6 col-md-4 col-lg-3">
-              <p>Síguenos</p>
+          <div class="col-8 col-sm-5 col-md-4 col-lg-3">
+              <p class="d-none d-sm-inline">Síguenos</p>
               <ul>
                 <li style="margin: 0 10px 0 -10px;"><div class="d-flex social justify-content-around p-1">
                   <img src="img/twitter.svg" alt="twitter">
