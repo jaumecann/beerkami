@@ -3,20 +3,25 @@
 };
 */
 
+// VALIDACIÓ DE LA CAIXA DE CERCA
+
+var userinput = document.getElementById("search-id");
+userinput.setAttribute("minlength","4");
+userinput.required = "true";
+
+/*
 var doSearch = document.getElementById("butt-id");
 
 doSearch.onclick = function(){
 
-var userinput = document.getElementById("search-id").value;
+userinput.setAttribute("required minlentgh","4");
+};
+*/
 
-if (userinput.length < 4){
-    alert ("too short!");
-} else {
-    alert ("it works");
-}
-}
 
 //  validacio search bar --> https://jsfiddle.net/ssenkus/wWZ5e/
 
 
 //input.addEventListener('submit', evt => {}
+
+// VALIDACIÓ LOGIN
