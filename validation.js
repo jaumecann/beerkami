@@ -5,23 +5,25 @@
 
 // VALIDACIÓ DE LA CAIXA DE CERCA
 
-var userinput = document.getElementById("search-id");
-userinput.setAttribute("minlength","4");
-userinput.required = "true";
+var form = document.getElementById('buscador')
+var userinput = document.getElementById('search-id');
 
-/*
-var doSearch = document.getElementById("butt-id");
+form.addEventListener("submit", function (event){
+if (userinput.value.length == 0){
+userinput.required = "false";
+} else if (userinput.value.length < 4) {
+userinput.style.color = "red";
+userinput.value = "mínimo 4 caracteres"
+event.preventDefault();
+}
 
-doSearch.onclick = function(){
+});
 
-userinput.setAttribute("required minlentgh","4");
-};
-*/
+form.addEventListener("input", function(){
+userinput.style.color = "black";    
+})
 
-
-//  validacio search bar --> https://jsfiddle.net/ssenkus/wWZ5e/
-
-
-//input.addEventListener('submit', evt => {}
-
-// VALIDACIÓ LOGIN
+userinput.addEventListener("click", function () {
+      userinput.value = "";
+    
+    });

@@ -1,30 +1,46 @@
-// There are many ways to pick a DOM node; here we get the form itself and the email
-// input box, as well as the span element into which we will place the error message.
+
 
 var form  = document.getElementById('form-login');
 var email = document.getElementById('mail');
-var error = document.querySelector('.error');
+var password = document.getElementById('password');
+var error = document.getElementById('mail-error');
+var error2 = document.getElementById('pass-error');
+var emailRegExp = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
 
-email.addEventListener("input", function (event) {
-  // Each time the user types something, we check if the
-  // email field is valid.
-  if (email.validity.valid) {
-    // In case there is an error message visible, if the field
-    // is valid, we remove the error message.
-    error.innerHTML = ""; // Reset the content of the message
-    error.className = "error"; // Reset the visual state of the message
-  }
-}, false);
+// possibles errors de camp buit o email incorrecte al fer submit
+
 form.addEventListener("submit", function (event) {
-  // Each time the user tries to send the data, we check
-  // if the email field is valid.
-  if (!email.validity.valid) {
-    
-    // If the field is not valid, we display a custom
-    // error message.
-    error.innerHTML = "I expect an e-mail, darling!";
-    error.className = "error active";
-    // And we prevent the form from being sent by canceling the event
+  if (email.value.length == "0") { 
+    error.className = "wrong";
+    error.innerHTML = "Es necesario rellenar este campo";
+    event.preventDefault();
+
+  } else if (!emailRegExp.test(email.value)){
+    error.className = "wrong";
+    error.innerHTML = "Formato de mail no válido";
+    event.preventDefault(); 
+  } 
+  
+  if (password.value.length == "0") { 
+    error2.className = "wrong";
+    error2.innerHTML = "Es necesario rellenar este campo";
     event.preventDefault();
   }
-}, false);
+
+});
+
+//en introduir nou input borrar possibles errors
+
+password.addEventListener("input", function (event) {
+  if (!password.value.length == "0") {
+    error2.innerHTML = ""; 
+    error2.classList.remove = "wrong";
+  }
+});
+
+email.addEventListener("input", function (event) {
+  if (!email.value.length == "0") {
+    error.innerHTML = ""; 
+    error.classList.remove = "wrong";
+  }
+});
