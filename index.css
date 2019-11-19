@@ -488,8 +488,37 @@
 /* STYLE FOR LOGIN PAGE */
 
 .wrong {
-  color: red;
+  color: rgb(184, 2, 2);
  
 }
 
-      
+.form-style {
+  background-color: var(--mybrown);
+}
+
+.text-field {
+  width: 50%;
+}
+
+label, button {
+
+  font-family: 'Contrail One', cursive;
+
+}
+
+.signup-style {
+  border: 2px solid var(--main);
+
+}
+
+.passwrd {
+  width: 250px;
+}
+
+.dropdown {
+  width: 50%;
+}
+
+.error {
+  color: orangered;
+}
