@@ -485,7 +485,7 @@
         }
 
       }
-/* STYLE FOR LOGIN PAGE */
+/* STYLE FOR LOGIN y REGISTER PAGE */
 
 .wrong {
   color: rgb(184, 2, 2);
@@ -516,9 +516,16 @@ label, button {
 }
 
 .dropdown {
-  width: 50%;
+  width: 75%;
 }
 
 .error {
   color: orangered;
+  font-size: .8em;
 }
+
+.error2 {
+  color: orangered;
+  font-size: .8em;
+}
+

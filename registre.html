@@ -67,7 +67,7 @@
                         <option value='caceres'>Cáceres</option>
                         <option value='cadiz'>Cádiz</option>
                         <option value='cantabria'>Cantabria</option>
-                        <option value='castellon'>Castellón/Castelló</option>
+                        <option value='castellon'>Castellón</option>
                         <option value='ceuta'>Ceuta</option>
                         <option value='ciudadreal'>Ciudad Real</option>
                         <option value='cordoba'>Córdoba</option>
@@ -110,7 +110,9 @@
                     </select>
                   
               </div>
-              <div id="pass-error"></div>
+              <!--
+                <label id="prov-error" class="error2" for="login-prov"></label>
+              -->
             </div>
 
 
@@ -128,16 +130,15 @@
 
 $(document).ready(function(){
 
-    var provincia = document.getElementsByTagName('select');
-/* PROVINCIA!
-    if ( provincia[0].selectedOptions == provincia[0].options[0]){
-    alert ("debes seleccionar una provincia")
-    };
-*/
+
 jQuery.validator.addMethod("specialpsw", function(value, element) {
   // regexp para 2 digitos y un caracter especial
   return this.optional( element ) || /^(?=(.*\d){2})(?=.*[a-zA-Z])(?=.*[!@#$%])[0-9a-zA-Z!@#$%]{8,}/.test( value );
 }, 'La contraseña debe incluir 2 dígitos y un caracter especial');
+
+jQuery.validator.addMethod("notEqual", function(value, element, param) {
+  return this.optional(element) || value !== param;
+}, "Debes seleccionar una provincia");
 
 
 
@@ -146,22 +147,25 @@ $("#form-login").validate({
       "login-email": {required: true, email: true},
       "login-password": {required: true, minlength: 8, specialpsw: true} ,
       "repeat-password": {required: true, equalTo: "#passorig"},
+      "login-prov": {notEqual: "default"},
     },
     messages: {
       "login-email": {required: "Te has olvidado de introducir el email", email: "Formato de correo inválido"},
-      "login-password": {required: "Introduzca una contraseña", minlength: "La contraseña debe tener al menos 8 caracteres"},
-      "repeat-password": {required: "Repita la contraseña ", equalTo: "Las contraseñas no coinciden"},
+      "login-password": {required: "Introduce una contraseña", minlength: "La contraseña debe tener al menos 8 caracteres"},
+      "repeat-password": {required: "Repite la contraseña ", equalTo: "Las contraseñas no coinciden"},
     }
   });
 
+
+
   $('#form-login').on('submit', function() {
-    
+
     if ($('#form-login').valid()) {
       alert("formulario válido");
       //form.submit();
     } else {
       alert("formulario NO válido");
-    }
+    };
 
 
 });
