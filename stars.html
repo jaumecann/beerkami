@@ -6,22 +6,89 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+       
     </head>
-    <body>
-        <div style="margin:auto; width:400px;">
-                <img src="img/orngstar.png" class="rate-it" alt="star">
-                <img src="img/orngstar.png" class="rate-it" alt="star">
-                <img src="img/orngstar.png" class="rate-it" alt="star">
-                <img src="img/orngstar.png" class="rate-it" alt="star">
-                <img src="img/orngstar.png" class="rate-it" alt="star">
-        </div>
-        
+
+    <style>
+
+    :root {
+    --insidecolor: white; 
+    --outsidecolor: black; 
+    }    
     
+    
+    .rate {
+        color: white;
+        font-size: 25px;
+    }
+
+    .rate2 {
+        color: black;
+        font-size: 32px;
+        margin-left: -6.5px;
+        margin-top: -6.4px;
+       
+    }
+
+
+    
+    </style>
+
+    <body>
+
+    <div style="margin-left:25%;">
+
+            <div>
+                    <p>
+                        <i class="fa fa-star rate"></i>
+                        <i class="fa fa-star rate"></i>
+                        <i class="fa fa-star rate"></i>
+                        <i class="fa fa-star rate"></i>
+                        <i class="fa fa-star rate"></i>
+        
+                    </p>
+        
+                </div>
+                <div id="absolute-div" style="position:absolute; top:0; border-style:solid; border-color:transparent; z-index:-1">
+                        <p>
+                            <i class="fa fa-star rate2"></i>
+                            <i class="fa fa-star rate2"></i>
+                            <i class="fa fa-star rate2"></i>
+                            <i class="fa fa-star rate2"></i>
+                            <i class="fa fa-star rate2"></i>
+            
+                        </p>
+                </div>
+
+
+    </div>
+
     </body>
 
     <script>
-    var star = document.getElementsByClassName('rate-it');
+  
+  var star = document.getElementsByClassName('rate');
+  var outStar = document.getElementsByClassName('rate2');
+  var box = document.getElementById('absolute-div');
+
+for (var i=0; i<star.length); i++){
+
+}
+star.onmouseenter = function (){}
+  star.forEach(function(item,index){
+    outStar[index].style.color = "orange";
+  });
     
+Array.from ????
+ /*
+  box.onmouseleave = function (){
+        star[i].style.color ="white";
+    }
+*/
+
+ 
     
     </script>
+
 </html>
