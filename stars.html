@@ -31,6 +31,12 @@
        
     }
 
+    body {
+        border-style:soli;
+        height: 500px;
+        width: 1000px;
+    }
+
 
     
     </style>
@@ -50,7 +56,7 @@
                     </p>
         
                 </div>
-                <div id="absolute-div" style="position:absolute; top:0; border-style:solid; border-color:transparent; z-index:-1">
+                <div id="absolute-div" style="position:absolute; top:0; border-style:solid; background-color: yellow; border-color:black; z-index:-1">
                         <p>
                             <i class="fa fa-star rate2"></i>
                             <i class="fa fa-star rate2"></i>
@@ -68,19 +74,62 @@
 
     <script>
   
-  var star = document.getElementsByClassName('rate');
-  var outStar = document.getElementsByClassName('rate2');
+  var star = Array.from(document.getElementsByClassName('rate'));
+  var outline= Array.from(document.getElementsByClassName('rate2'));
   var box = document.getElementById('absolute-div');
 
-for (var i=0; i<star.length); i++){
+
+
+star.forEach(function(item,index){
+
+item.onmouseenter = function (){
+
+    //outline[index].nextElementSibling.style.color = "black"; 
+    
+    if (outline[index].style.color = "black"){   
+        outline[index].style.color = "orange";
+            var i=index-1;
+            while (i>=0){
+                outline[i].style.color = "orange";
+                i--;
+            }
+    } else if (outline[index].style.color = "orange"){
+        outline[index].nextElementSibling.style.color = "black"; 
+    }
+            };
+
+
+
+
+
+
+item.onmouseleave = function (){
+    outline[index].style.color = "black";
+
 
 }
-star.onmouseenter = function (){}
-  star.forEach(function(item,index){
-    outStar[index].style.color = "orange";
-  });
+
+});
+
+
+
+ 
     
-Array.from ????
+//if (!star[index].previousElementSibling || )
+ 
+
+/*
+ box.onmouseleave = function (){
+        outStar[index].style.color = "black";
+        };
+    
+ */
+
+ 
+
+
+    
+//Array.from ????
  /*
   box.onmouseleave = function (){
         star[i].style.color ="white";
