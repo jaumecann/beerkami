@@ -46,14 +46,14 @@
     <div style="margin-left:25%;">
 
             <div>
-                    <p>
+                    <div id="lazona" style="border-style:solid; width:100%;">
                         <i class="fa fa-star rate"></i>
                         <i class="fa fa-star rate"></i>
                         <i class="fa fa-star rate"></i>
                         <i class="fa fa-star rate"></i>
                         <i class="fa fa-star rate"></i>
         
-                    </p>
+                    </div>
         
                 </div>
                 <div id="absolute-div" style="position:absolute; top:0; border-style:solid; background-color: yellow; border-color:black; z-index:-1">
@@ -76,7 +76,7 @@
   
   var star = Array.from(document.getElementsByClassName('rate'));
   var outline= Array.from(document.getElementsByClassName('rate2'));
-  var box = document.getElementById('absolute-div');
+  var box = document.getElementById('lazona');
 
 
 
@@ -93,23 +93,40 @@ item.onmouseenter = function (){
                 outline[i].style.color = "orange";
                 i--;
             }
-    } else if (outline[index].style.color = "orange"){
-        outline[index].nextElementSibling.style.color = "black"; 
+    }; 
+    
+    if (outline[index].style.color = "orange"){
+        var i=index+1;
+        while (i<outline.length){
+                outline[i].style.color = "black";
+                i++; 
     }
-            };
 
-
-
-
-
-
-item.onmouseleave = function (){
-    outline[index].style.color = "black";
+};
 
 
 }
 
+box.onmouseout = function (){
+for (var i=0; i<star.length; i++){
+outline[i].style.color = "green";
+}
+
+console.log(outline[index].style.color)
+
+};
+
+
+
+
+
 });
+
+
+
+
+
+
 
 
 
