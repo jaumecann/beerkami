@@ -7,15 +7,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Contrail+One&display=swap" rel="stylesheet">
        
     </head>
 
     <style>
-
-    :root {
-    --insidecolor: white; 
-    --outsidecolor: black; 
-    }    
     
     
     .rate {
@@ -23,20 +19,22 @@
         font-size: 25px;
         padding-left: 2px;
         width: 28px;
-        margin-top: 11px;
+        margin-top: 19px;
     
     }
 
     .rate2 {
-        color: black;
+        color: rgb(0, 0, 0);
         font-size: 32px;    
     }
 
     body {
         border-style:soli;
-        height: 500px;
-        width: 1000px;
-        
+        height: 1000px;
+        width: 100%;
+        background-color:#ffe3be8e;
+        display:flex;
+        justify-content:center;
     }
 
 
@@ -45,29 +43,36 @@
 
     <body>
 
-    <div style="margin-left:25%;">
+            <div style="margin-top:50px; position:absolute; border-style:solid; height: 50px; width: 190px; border-width: 1px">
 
-            <div>
-                    <div id="star-area" style="border-style:;">
-                        <i class="fa fa-star rate" style="margin-left:10.5px"></i>
-                        <i class="fa fa-star rate"></i>
-                        <i class="fa fa-star rate"></i>
-                        <i class="fa fa-star rate"></i>
-                        <i class="fa fa-star rate"></i>
+                    <div>
+                            <div id="star-area">
+                                <i class="fa fa-star rate" style="margin-left:10.5px"></i>
+                                <i class="fa fa-star rate"></i>
+                                <i class="fa fa-star rate"></i>
+                                <i class="fa fa-star rate"></i>
+                                <i class="fa fa-star rate"></i>
+                
+                            </div>
+                
+                        </div>
+                        <div id="absolute-div" style="position:absolute; top:0; padding-left: 10px; border-color:black; z-index:-1;">
+                                <p>
+                                    <i class="fa fa-star rate2"></i>
+                                    <i class="fa fa-star rate2"></i>
+                                    <i class="fa fa-star rate2"></i>
+                                    <i class="fa fa-star rate2"></i>
+                                    <i class="fa fa-star rate2"></i>
+                    
+                                </p>
+                        </div>
         
-                    </div>
         
                 </div>
-                <div id="absolute-div" style="position:absolute; top:0; padding-left: 10px; border-color:black; z-index:-1;">
-                        <p>
-                            <i class="fa fa-star rate2"></i>
-                            <i class="fa fa-star rate2"></i>
-                            <i class="fa fa-star rate2"></i>
-                            <i class="fa fa-star rate2"></i>
-                            <i class="fa fa-star rate2"></i>
-            
-                        </p>
-                </div>
+
+   <div id="container" style="display:flex; justify-content:center; font-family:'Contrail One', cursive; padding-top:20px;  height: 100%; width: 100%">
+       Rate it
+   
 
 
     </div>
@@ -79,6 +84,7 @@
   var star = Array.from(document.getElementsByClassName('rate'));
   var outline= Array.from(document.getElementsByClassName('rate2'));
   var box = document.getElementById('star-area');
+  var container = document.getElementById('container');
 
 
 
@@ -87,15 +93,15 @@ star.forEach(function(item,index){
 item.onmouseenter = function (){
     
     if (outline[index].style.color = "black"){   
-        outline[index].style.color = "orange";
+        outline[index].style.color = "#ab5a00";
             var i=index-1;
             while (i>=0){
-                outline[i].style.color = "orange";
+                outline[i].style.color = "#ab5a00";
                 i--;
             }
     }; 
     
-    if (outline[index].style.color = "orange"){
+    if (outline[index].style.color = "#ab5a00"){
         var i=index+1;
         while (i<outline.length){
                 outline[i].style.color = "black";
@@ -110,9 +116,6 @@ box.onmouseout = function (){
 for (var i=0; i<star.length; i++){
 outline[i].style.color = "black";
 }
-
-console.log(outline[index].style.color)
-
 };
 
 
@@ -130,8 +133,12 @@ while (j<star.length){
 star[j].style.color = "white";
 j++; 
 }
+};
 
-
+container.onclick = function (){
+for (var i=0; i<star.length; i++){
+star[i].style.color = "white";
+}  
 }
 
 
